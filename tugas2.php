@@ -1,10 +1,17 @@
 <?php
-$saldoAwal = 2000000; // Diperbaiki dari 1000000 sesuai soal
-$bunga = 0.03;
-$bulan = 11;
+// Tentukan nilai jari-jari (r) dan garis pelukis (s)
+$r = 7; 
+$s = 10;
+define("PI", 3.14);
 
-// Rumus: Saldo Awal + (Saldo Awal * bunga * bulan)
-$saldoAkhir = $saldoAwal + ($saldoAwal * $bunga * $bulan);
+// Perhitungan
+$luasAlas = PI * $r * $r;
+$luasPermukaan = (PI * $r * $r) + (PI * $r * $s);
 
-echo "Saldo akhir setelah ".$bulan." bulan adalah : Rp. ".$saldoAkhir.",-";
+// Menampilkan hasil
+echo "--- Perhitungan Kerucut ---<br>";
+echo "Jari-jari (r) = " . $r . "<br>";
+echo "Garis pelukis (s) = " . $s . "<br><br>";
+echo "Luas Alas = " . $luasAlas . "<br>";
+echo "Luas Permukaan = " . $luasPermukaan . "<br>";
 ?>
